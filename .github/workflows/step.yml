@@ -36,4 +36,4 @@ jobs:
       - uses: actions/checkout@v2
         with: 
           ref: refs/tags/${{ matrix.appversion}}
-      - run: echo "Je fais le TF"
+      - run: ls
