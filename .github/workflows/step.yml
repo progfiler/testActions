@@ -17,8 +17,14 @@ jobs:
   test-unitaire:
     needs: build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [6, 8, 10]
     steps:
-      - run: echo "Je fais le TU"
+      - uses: actions/setup-node@v2
+        with: 
+          node-version: ${{ matrix.node }}
+        run: echo "Je test sur la version de node ${{ matrix.node }}"
 
   test-fonctionel:
     needs: test-unitaire
