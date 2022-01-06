@@ -1,12 +1,18 @@
+# On nomme le workflow 
 name: "Ma serie de test"
+# On lui dit quand il se déclanche
 on:
   push:
 
+# On défini les jobs
 jobs:
+  # On donne un noml à notre Job 
   toto-job:
+    # On défini l'OS du serveur qui va executer le job
     runs-on: ubuntu-latest
+    # On donne les étapes
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2 # Permet de récuperer le repo
       - name: list file directory
         run: ls > info.log
       - name: Telechargement des logs

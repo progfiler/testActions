@@ -1,0 +1,24 @@
+name: "Test de mon app"
+on:
+  push:
+
+jobs: 
+  install: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Je fais l'install"
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Je fais le build"
+
+  test-unitaire:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Je fais le TU"
+
+  test-fonctionel:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Je fais le TF"
