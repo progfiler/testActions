@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        appversion: [1.0.0, 2.0.0, 3.0.0]
+        appversion: [1.0.0, 2.0.0, 3.0.1]
     steps:
       - uses: actions/checkout@v2
         with: 
