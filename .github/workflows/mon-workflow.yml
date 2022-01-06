@@ -1,8 +1,7 @@
 name: "Ma serie de test"
 on:
   push:
-    branches:
-      - develop
+
 jobs:
   toto-job:
     runs-on: ubuntu-latest
