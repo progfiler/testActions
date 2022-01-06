@@ -1,5 +1,8 @@
 name: "Ma serie de test"
-on: [push]
+on:
+  push:
+    branches:
+      - develop
 jobs:
   toto-job:
     runs-on: macos-latest
