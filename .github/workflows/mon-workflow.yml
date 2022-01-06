@@ -5,7 +5,8 @@ on:
       - develop
 jobs:
   toto-job:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
-      - run: echo  "Je fais les tests"
-      - run: echo "Je fait le build"
+      - name: Execute script install
+        run: ./.github/scripts/install.sh
+        shell: bash 
