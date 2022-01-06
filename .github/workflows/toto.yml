@@ -1,4 +1,4 @@
-name: "Ma serie de test"
+name: "Toto Workflow"
 on:
   push:
 
