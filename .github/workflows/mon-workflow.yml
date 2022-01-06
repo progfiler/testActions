@@ -6,6 +6,7 @@ jobs:
   toto-job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: list file directory
         run: ls
       - name: Execute script install
