@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: echo "J'effectue mes tests"
-      - run: echo "Salut à tous"
+      - run: exit 1 
       - name: Je liste mes fichiers 
         run: ls 
 
