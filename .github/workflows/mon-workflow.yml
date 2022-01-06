@@ -1,0 +1,8 @@
+name: "Ma serie de test"
+on: [push]
+jobs:
+  toto-job:
+    runs-on: macos-latest
+    steps:
+      - run: echo  "Je fais les tests"
+      - run: echo "Je fait le build"
