@@ -1,0 +1,16 @@
+name: "Ma serie de test"
+on:
+  push:
+
+jobs:
+  toto-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: list file directory
+        run: ls > info.log
+      - name: Telechargement des logs
+        uses: actions/upload-artifact@v2
+        with: 
+          name: info.log
+          path: info.log
