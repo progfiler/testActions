@@ -29,5 +29,11 @@ jobs:
   test-fonctionel:
     needs: test-unitaire
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        appversion: [1.0.0, 2.0.0]
     steps:
+      - uses: actions/checkout@v2
+        with: 
+          ref: refs/tags/${{ matrix.appversion}}
       - run: echo "Je fais le TF"
