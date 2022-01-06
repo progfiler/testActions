@@ -8,12 +8,6 @@ jobs:
     steps:
       - run: echo "Je fais l'install"
 
-  build:
-    needs: install
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Je fais le build"
-
   test-unitaire:
     needs: build
     runs-on: ubuntu-latest
@@ -25,3 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Je fais le TF"
+      
+  build:
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Je fais le build"
