@@ -2,7 +2,7 @@ name: Test Action
 on: [push]
 jobs:
   Mon-Premier-Job: 
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps: 
       - run: echo "J'effectue mes tests"
 
