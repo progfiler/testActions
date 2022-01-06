@@ -9,6 +9,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: list file directory
         run: ls
+      - name: change permission install.sh
+        run: chmod 711 ./.github/scripts/install.sh
       - name: Execute script install
         run: ./.github/scripts/install.sh
         shell: bash 
