@@ -1,11 +1,11 @@
 name: Test Action
-on: [push]
+on: [pull_request]
 jobs:
   Mon-Premier-Job: 
     runs-on: ubuntu-latest
     steps: 
       - run: echo "J'effectue mes tests"
-      - run: exit 1 
+      - run: echo "toto"
       - name: Je liste mes fichiers 
         run: ls 
 
