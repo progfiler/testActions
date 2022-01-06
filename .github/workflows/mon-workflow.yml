@@ -6,6 +6,8 @@ jobs:
   toto-job:
     runs-on: ubuntu-latest
     steps:
+      - name: list file directory
+        run: ls
       - name: Execute script install
         run: ./.github/scripts/install.sh
         shell: bash 
