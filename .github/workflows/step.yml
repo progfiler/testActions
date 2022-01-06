@@ -27,7 +27,7 @@ jobs:
   #     - run: echo "Je test sur la version de node ${{ matrix.node }}"
 
   test-fonctionel:
-    needs: test-unitaire
+    # needs: test-unitaire
     runs-on: ubuntu-latest
     strategy:
       matrix:
